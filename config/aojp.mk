@@ -16,5 +16,9 @@
 LOCAL_PATH := vendor/aojp
 # Init files
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/sbin/recovery-prepprocess:root/sbin/recovery-prepprocess
+    $(LOCAL_PATH)/rootdir/sbin/recovery-prepprocess:root/sbin/recovery-prepprocess\
+    $(LOCAL_PATH)/rootdir/sbin/felica_init.sh:root/sbin/felica_init.sh\
+    $(LOCAL_PATH)/rootdir/sbin/setprop:root/sbin/setprop\
+    $(LOCAL_PATH)/rootdir/sbin/setpropex:root/sbin/setpropex
+
 
