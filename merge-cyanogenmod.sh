@@ -69,6 +69,7 @@ func_fetch CyanogenMod android_device_samsung_t0lte device/samsung/sc02e
 func_fetch CyanogenMod android_device_samsung_skyrocket device/samsung/celoxdcm
 func_fetch CyanogenMod android_device_samsung_hlte-common device/samsung/hlte-common
 func_fetch CyanogenMod android_device_samsung_hltetmo device/samsung/hltedcm
+func_fetch CyanogenMod android_device_samsung_hltespr device/samsung/hltekdi
 # kernel
 func_fetch CyanogenMod android_kernel_samsung_msm8660 kernel/samsung/msm8660-dcm
 func_fetch CyanogenMod android_kernel_samsung_d2 kernel/samsung/d2dcm
