@@ -14,7 +14,6 @@ func_fetch() {
     echo;
     if [ ! -d $DIR ]; then
         echo "Skip"
-        return
     else
       cd $DIR
       git fetch git@github.com:$REMOTE/$NAME.git $REVISION
