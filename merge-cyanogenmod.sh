@@ -62,7 +62,6 @@ func_fetch CyanogenMod android_device_samsung_i9305 device/samsung/sc03e
 func_fetch CyanogenMod android_device_samsung_i9100 device/samsung/sc02c
 func_fetch CyanogenMod android_device_samsung_t0lte device/samsung/sc02e
 func_fetch CyanogenMod android_device_samsung_skyrocket device/samsung/celoxdcm
-func_fetch CyanogenMod android_device_samsung_hlte-common device/samsung/hlte-common
 func_fetch CyanogenMod android_device_samsung_hltetmo device/samsung/hltedcm
 func_fetch CyanogenMod android_device_samsung_hltespr device/samsung/hltekdi
 # kernel
