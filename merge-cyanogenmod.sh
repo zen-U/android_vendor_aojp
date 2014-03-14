@@ -65,7 +65,7 @@ func_fetch CyanogenMod android_device_samsung_skyrocket device/samsung/celoxdcm
 func_fetch CyanogenMod android_device_samsung_hltetmo device/samsung/hltedcm
 func_fetch CyanogenMod android_device_samsung_hltespr device/samsung/hltekdi
 # kernel
-func_fetch CyanogenMod android_kernel_samsung_msm8660 kernel/samsung/msm8660-dcm
+func_fetch CyanogenMod android_kernel_samsung_msm8660-common kernel/samsung/msm8660-dcm
 func_fetch CyanogenMod android_kernel_samsung_d2 kernel/samsung/d2dcm
 func_fetch CyanogenMod android_kernel_samsung_smdk4412 kernel/samsung/exynos4412dcm kbc-cyanogen-cm-11.0
 func_fetch CyanogenMod android_kernel_samsung_jf kernel/samsung/jfdcm kbc-aosp-kk
