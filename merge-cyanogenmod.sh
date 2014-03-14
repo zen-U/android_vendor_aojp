@@ -70,3 +70,10 @@ func_fetch CyanogenMod android_kernel_samsung_smdk4412 kernel/samsung/exynos4412
 func_fetch CyanogenMod android_kernel_samsung_jf kernel/samsung/jfdcm kbc-aosp-kk
 func_fetch CyanogenMod android_kernel_samsung_hlte kernel/samsung/hlte
 
+#---------------------------------------
+#lge
+#---------------------------------------
+func_fetch CyanogenMod android_device_lge_g2-common device/lge/g2-common
+
+#kernel
+func_fetch CyanogenMod  android_kernel_lge_msm8974 kernel/lge/msm8974
