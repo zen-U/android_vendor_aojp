@@ -16,7 +16,7 @@ func_fetch() {
         echo "Skip"
     else
       cd $DIR
-      git fetch git@github.com:$REMOTE/$NAME.git $REVISION
+      git fetch https://github.com/$REMOTE/$NAME.git $REVISION
       git merge FETCH_HEAD
       if [ "$REMOTE_BRUNCH" != "" ]; then
           git push github $REVISION:$REMOTE_BRUNCH
