@@ -14,11 +14,9 @@
 
 LOCAL_PATH := vendor/aojp
 
-# default locale
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.product.locale.language=ja \
-    ro.product.locale.region=JP
+# Felica for samsung deviceis
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/sbin/felica_init.sh:root/sbin/felica_init.sh\
+    $(LOCAL_PATH)/rootdir/sbin/setpropex:root/sbin/setpropex
 
-#Input method (Japanese keyboard)
-PRODUCT_PACKAGES += OpenWnn libWnnEngDic libWnnJpnDic libwnndict
 
