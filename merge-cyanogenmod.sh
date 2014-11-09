@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ANDROID_HOME=$PWD
-REVISION=cm-11.0
+REVISION=cm-12.0
 
 func_fetch() {
     REMOTE=$1
