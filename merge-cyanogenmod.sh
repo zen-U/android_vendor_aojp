@@ -47,6 +47,7 @@ func_fetch CyanogenMod android_bootable_recovery bootable/recovery
 func_fetch CyanogenMod android_device_samsung_qcom-common device/samsung/qcom-common
 func_fetch CyanogenMod android_device_samsung_msm8660-common device/samsung/msm8660-common
 func_fetch CyanogenMod android_device_samsung_msm8960-common device/samsung/msm8960-common
+func_fetch CyanogenMod android_device_samsung_msm8974-common device/samsung/msm8974-common
 func_fetch CyanogenMod android_device_samsung_smdk4412-common device/samsung/smdk4412-common
 func_fetch CyanogenMod android_device_samsung_smdk4412-qcom-common device/samsung/smdk4412-qcom-common
 func_fetch CyanogenMod android_device_samsung_celox-common device/samsung/celox-common
@@ -54,7 +55,8 @@ func_fetch CyanogenMod android_device_samsung_quincy-common device/samsung/quinc
 func_fetch CyanogenMod android_device_samsung_d2-common device/samsung/d2-common
 func_fetch CyanogenMod android_device_samsung_galaxys2-common device/samsung/galaxys2-common
 func_fetch CyanogenMod android_device_samsung_jf-common device/samsung/jf-common
-func_fetch CyanogenMod android_device_samsung_hlte device/samsung/hlte
+func_fetch CyanogenMod android_device_samsung_hlte device/samsung/hltedcm
+func_fetch CyanogenMod android_device_samsung_hlte-common device/samsung/hltedcm-common
 func_fetch CyanogenMod android_hardware_samsung hardware/samsung
 func_fetch CyanogenMod android_device_samsung_quincyatt device/samsung/quincydcm
 func_fetch CyanogenMod android_device_samsung_jflteatt device/samsung/jfltedcm
@@ -69,7 +71,7 @@ func_fetch CyanogenMod android_kernel_samsung_msm8660-common kernel/samsung/msm8
 func_fetch CyanogenMod android_kernel_samsung_d2 kernel/samsung/d2dcm
 func_fetch CyanogenMod android_kernel_samsung_smdk4412 kernel/samsung/exynos4412dcm kbc-cyanogen-cm-11.0
 func_fetch CyanogenMod android_kernel_samsung_jf kernel/samsung/jfdcm kbc-aosp-kk
-func_fetch CyanogenMod android_kernel_samsung_hlte kernel/samsung/hltedcm
+func_fetch CyanogenMod android_kernel_samsung_hlte kernel/samsung/hlte
 
 #---------------------------------------
 #lge
