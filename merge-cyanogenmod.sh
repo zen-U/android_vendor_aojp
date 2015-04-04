@@ -16,13 +16,20 @@ func_fetch() {
         echo "Skip"
     else
       cd $DIR
-      git fetch https://github.com/$REMOTE/$NAME.git $REVISION
-      git merge FETCH_HEAD
-      if [ "$REMOTE_BRUNCH" != "" ]; then
-          git push github $REVISION:$REMOTE_BRUNCH
+
+      repo=`git remote -v |grep github.com/kbc-developers`
+      if [ -z "$repo" ]; then
+        echo "Skip: remote is not kbc-developers "
       else
-          git push github $REVISION
-      fi
+      #Just kbc-developers repository
+	    git fetch https://github.com/$REMOTE/$NAME.git $REVISION
+	    git merge FETCH_HEAD
+	    if [ "$REMOTE_BRUNCH" != "" ]; then
+	      git push github $REVISION:$REMOTE_BRUNCH
+	    else
+		      git push github $REVISION
+	    fi
+	  fi
       cd $ANDROID_HOME
     fi
 
@@ -31,7 +38,7 @@ func_fetch() {
 }
 
 func_fetch CyanogenMod android android
-#func_fetch CyanogenMod android_build build
+func_fetch CyanogenMod android_build build
 #func_fetch CyanogenMod android_frameworks_base frameworks/base
 #func_fetch CyanogenMod android_packages_apps_Settings packages/apps/Settings
 #func_fetch CyanogenMod android_frameworks_native frameworks/native
