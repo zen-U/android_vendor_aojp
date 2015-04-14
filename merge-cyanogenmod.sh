@@ -47,7 +47,7 @@ func_fetch CyanogenMod android_frameworks_native frameworks/native
 #func_fetch CyanogenMod android_system_core system/core
 
 # vendor
-#func_fetch CyanogenMod android_vendor_cm vendor/cm
+func_fetch CyanogenMod android_vendor_cm vendor/cm
 
 # recovery
 func_fetch CyanogenMod android_bootable_recovery bootable/recovery
@@ -55,6 +55,9 @@ func_fetch CyanogenMod android_bootable_recovery bootable/recovery
 #---------------------------------------
 # Samsung
 #---------------------------------------
+#hardware 
+#func_fetch CyanogenMod android_hardware_samsung hardware/samsung
+
 # device
 func_fetch CyanogenMod android_device_samsung_qcom-common device/samsung/qcom-common
 func_fetch CyanogenMod android_device_samsung_msm8660-common device/samsung/msm8660-common
