@@ -41,6 +41,7 @@ func_fetch() {
 func_fetch CyanogenMod android android
 func_fetch CyanogenMod android_build build
 func_fetch CyanogenMod android_bionic bionic
+func_fetch CyanogenMod android_frameworks_av frameworks/av
 #func_fetch CyanogenMod android_frameworks_base frameworks/base
 #func_fetch CyanogenMod android_packages_apps_Settings packages/apps/Settings
 func_fetch CyanogenMod android_frameworks_native frameworks/native
