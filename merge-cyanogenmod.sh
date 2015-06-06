@@ -46,6 +46,7 @@ func_fetch CyanogenMod android_frameworks_av frameworks/av
 #func_fetch CyanogenMod android_packages_apps_Settings packages/apps/Settings
 func_fetch CyanogenMod android_frameworks_native frameworks/native
 #func_fetch CyanogenMod android_system_core system/core
+func_fetch CyanogenMod android_packages_apps_Nfc packages/apps/Nfc
 
 # vendor
 func_fetch CyanogenMod android_vendor_cm vendor/cm
