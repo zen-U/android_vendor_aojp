@@ -8,6 +8,11 @@ func_fetch() {
     NAME=$2
     DIR=$3
     REMOTE_BRUNCH=$4
+    FETCH_REVISION=$5
+
+    if [ "$FETCH_REVISION" = "" ]; then
+        FETCH_REVISION=$REVISION
+    fi
 
     echo ================================================================
     echo "Project: $NAME"
@@ -15,22 +20,22 @@ func_fetch() {
     if [ ! -d $DIR ]; then
         echo "Skip"
     else
-      cd $DIR
+        cd $DIR
 
-      repo=`git remote -v |grep github.com/kbc-developers`
-      if [ -z "$repo" ]; then
-        echo "Skip: remote is not kbc-developers "
-      else
-      #Just kbc-developers repository
-	    git fetch https://github.com/$REMOTE/$NAME.git $REVISION
-	    git merge FETCH_HEAD
-	    if [ "$REMOTE_BRUNCH" != "" ]; then
-	      git push github $REVISION:$REMOTE_BRUNCH
-	    else
-		      git push github $REVISION
-	    fi
-	  fi
-      cd $ANDROID_HOME
+        repo=`git remote -v |grep github.com/kbc-developers`
+        if [ -z "$repo" ]; then
+            echo "Skip: remote is not kbc-developers "
+        else
+            #Just kbc-developers repository
+            git fetch https://github.com/${REMOTE}/${NAME}.git ${FETCH_REVISION}
+            git merge FETCH_HEAD
+            if [ "$REMOTE_BRUNCH" != "" ]; then
+                git push github ${REVISION}:${REMOTE_BRUNCH}
+            else
+                git push github ${REVISION}
+            fi
+        fi
+        cd ${ANDROID_HOME}
     fi
 
     echo ================================================================
@@ -52,7 +57,8 @@ func_fetch CyanogenMod android_packages_apps_Nfc packages/apps/Nfc
 func_fetch CyanogenMod android_vendor_cm vendor/cm
 
 # recovery
-func_fetch CyanogenMod android_bootable_recovery bootable/recovery
+func_fetch CyanogenMod android_bootable_recovery bootable/recovery-cm
+func_fetch omnirom android_bootable_recovery bootable/recovery-twrp android-5.1 android-5.1
 
 #---------------------------------------
 # Samsung
