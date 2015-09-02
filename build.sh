@@ -5,13 +5,16 @@ MAKE_TARGET=$2
 
 PRODUCT_CONF=vendor/aojp/products/${PRODUCT}.conf
 if [ ! -e ${PRODUCT_CONF} ]; then
-  echo "${PRODUCT_CONF} is not found."
+  echo -e "\033[0;31m${PRODUCT_CONF} is not found.\033[0;39m"
   echo "Usage: build.sh [product name]"
+  echo "  - [product name] is available below :"
+  echo -e "\033[0;36m"'    '`ls -1 vendor/aojp/products/ | cut -d . -f1`"\033[0;39m"
   exit -1
 fi
 
 # common
 export CM_BUILDTYPE=AOJP
+export KBUILD_BUILD_HOST=kbc
 
 # import product config
 . ${PRODUCT_CONF}
