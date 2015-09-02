@@ -20,5 +20,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.locale.region=JP
 
 #Input method (Japanese keyboard)
-PRODUCT_PACKAGES += OpenWnn libWnnEngDic libWnnJpnDic libwnndict
+PRODUCT_PACKAGES += \
+	Mozc
 
