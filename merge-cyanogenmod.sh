@@ -87,6 +87,7 @@ func_fetch CyanogenMod android_device_samsung_i9305 device/samsung/sc03e
 func_fetch CyanogenMod android_device_samsung_i9100 device/samsung/sc02c
 func_fetch CyanogenMod android_device_samsung_t0lte device/samsung/sc02e
 func_fetch CyanogenMod android_device_samsung_skyrocket device/samsung/celoxdcm
+func_fetch CyanogenMod android_device_samsung_kltedcm device/samsung/kltedcm
 func_fetch CyanogenMod android_hardware_samsung hardware/samsung
 
 # kernel
@@ -95,6 +96,7 @@ func_fetch CyanogenMod android_kernel_samsung_d2 kernel/samsung/d2dcm
 func_fetch CyanogenMod android_kernel_samsung_smdk4412 kernel/samsung/exynos4412dcm
 func_fetch CyanogenMod android_kernel_samsung_jf kernel/samsung/jfdcm
 func_fetch CyanogenMod android_kernel_samsung_hlte kernel/samsung/hlte
+func_fetch CyanogenMod android_kernel_samsung_klte kernel/samsung/klte
 
 # vendor
 func_fetch TheMuppets proprietary_vendor_samsung vendor/samsung
