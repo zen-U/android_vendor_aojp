@@ -29,10 +29,11 @@ func_fetch() {
             #Just kbc-developers repository
             git fetch https://github.com/${REMOTE}/${NAME}.git ${FETCH_REVISION}
             git merge FETCH_HEAD
-            git rebase cm-13.0
             if [ "$REMOTE_BRUNCH" != "" ]; then
+                git rebase github/${REMOTE_BRUNCH}
                 git push github ${REVISION}:${REMOTE_BRUNCH}
             else
+                git rebase github/${REVISION}
                 git push github ${REVISION}
             fi
         fi
