@@ -27,14 +27,14 @@ func_fetch() {
             echo "Skip: remote is not kbc-developers "
         else
             #Just kbc-developers repository
-            git fetch https://github.com/${REMOTE}/${NAME}.git ${FETCH_REVISION}
-            git merge FETCH_HEAD
+            git fetch https://github.com/${REMOTE}/${NAME}.git ${FETCH_REVISION} || exit 1
+            git merge -q FETCH_HEAD || exit 1
             if [ "$REMOTE_BRUNCH" != "" ]; then
-                git rebase github/${REMOTE_BRUNCH}
-                git push github ${REVISION}:${REMOTE_BRUNCH}
+                git rebase github/${REMOTE_BRUNCH} || exit 1
+                git push github ${REVISION}:${REMOTE_BRUNCH} || exit 1
             else
-                git rebase github/${REVISION}
-                git push github ${REVISION}
+                git rebase github/${REVISION} || exit 1
+                git push github ${REVISION} || exit 1
             fi
         fi
         cd ${ANDROID_HOME}
@@ -59,14 +59,14 @@ func_fetch CyanogenMod android_packages_apps_Nfc packages/apps/Nfc
 #func_fetch CyanogenMod android_vendor_cm vendor/cm
 
 # recovery
-#func_fetch CyanogenMod android_bootable_recovery bootable/recovery-cm
+func_fetch CyanogenMod android_bootable_recovery bootable/recovery-cm
 func_fetch omnirom android_bootable_recovery bootable/recovery-twrp android-6.0 android-6.0
 
 #---------------------------------------
 # Samsung
 #---------------------------------------
 #hardware 
-#func_fetch CyanogenMod android_hardware_samsung hardware/samsung
+func_fetch CyanogenMod android_hardware_samsung hardware/samsung
 
 # device
 func_fetch CyanogenMod android_device_samsung_qcom-common device/samsung/qcom-common
