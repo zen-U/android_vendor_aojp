@@ -30,10 +30,8 @@ func_fetch() {
             git fetch https://github.com/${REMOTE}/${NAME}.git ${FETCH_REVISION} || exit 1
             git merge -q FETCH_HEAD || exit 1
             if [ "$REMOTE_BRUNCH" != "" ]; then
-                git rebase github/${REMOTE_BRUNCH} || exit 1
                 git push github ${REVISION}:${REMOTE_BRUNCH} || exit 1
             else
-                git rebase github/${REVISION} || exit 1
                 git push github ${REVISION} || exit 1
             fi
         fi
