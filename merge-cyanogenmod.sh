@@ -27,8 +27,8 @@ func_fetch() {
             echo "Skip: remote is not kbc-developers "
         else
             #Just kbc-developers repository
-            git fetch https://github.com/${REMOTE}/${NAME}.git ${FETCH_REVISION}
-            git merge FETCH_HEAD
+            git fetch https://github.com/${REMOTE}/${NAME}.git ${FETCH_REVISION} || exit -1
+            git merge FETCH_HEAD || exit -1
             if [ "$REMOTE_BRUNCH" != "" ]; then
                 git push github ${REVISION}:${REMOTE_BRUNCH}
             else
@@ -83,11 +83,12 @@ func_fetch CyanogenMod android_device_samsung_hlte-common device/samsung/hlte-co
 func_fetch CyanogenMod android_device_samsung_quincyatt device/samsung/quincydcm
 func_fetch CyanogenMod android_device_samsung_jflteatt device/samsung/jfltedcm
 func_fetch CyanogenMod android_device_samsung_d2att device/samsung/d2dcm
-func_fetch CyanogenMod android_device_samsung_i9305 device/samsung/sc03e
+#func_fetch CyanogenMod android_device_samsung_i9305 device/samsung/sc03e
 func_fetch CyanogenMod android_device_samsung_i9100 device/samsung/sc02c
 func_fetch CyanogenMod android_device_samsung_t0lte device/samsung/sc02e
 func_fetch CyanogenMod android_device_samsung_skyrocket device/samsung/celoxdcm
 func_fetch CyanogenMod android_device_samsung_klte device/samsung/kltedcm
+func_fetch CyanogenMod android_device_samsung_klte-common common/samsung/klte-common
 func_fetch CyanogenMod android_hardware_samsung hardware/samsung
 
 # kernel
