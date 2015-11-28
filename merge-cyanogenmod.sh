@@ -54,7 +54,7 @@ func_fetch CyanogenMod android_build build
 func_fetch CyanogenMod android_packages_apps_Nfc packages/apps/Nfc
 
 # vendor
-#func_fetch CyanogenMod android_vendor_cm vendor/cm
+func_fetch CyanogenMod android_vendor_cm vendor/cm
 
 # recovery
 func_fetch CyanogenMod android_bootable_recovery bootable/recovery-cm
