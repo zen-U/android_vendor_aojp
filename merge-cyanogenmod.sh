@@ -88,7 +88,7 @@ func_fetch CyanogenMod android_device_samsung_i9100 device/samsung/sc02c
 func_fetch CyanogenMod android_device_samsung_t0lte device/samsung/sc02e
 func_fetch CyanogenMod android_device_samsung_skyrocket device/samsung/celoxdcm
 func_fetch CyanogenMod android_device_samsung_klte device/samsung/kltedcm
-func_fetch CyanogenMod android_device_samsung_klte-common common/samsung/klte-common
+func_fetch CyanogenMod android_device_samsung_klte-common device/samsung/klte-common
 func_fetch CyanogenMod android_hardware_samsung hardware/samsung
 
 # kernel
