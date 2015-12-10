@@ -49,7 +49,7 @@ func_fetch CyanogenMod android_build build
 #func_fetch CyanogenMod android_frameworks_av frameworks/av
 #func_fetch CyanogenMod android_frameworks_base frameworks/base
 #func_fetch CyanogenMod android_packages_apps_Settings packages/apps/Settings
-#func_fetch CyanogenMod android_frameworks_native frameworks/native
+func_fetch CyanogenMod android_frameworks_native frameworks/native
 func_fetch CyanogenMod android_system_core system/core
 func_fetch CyanogenMod android_packages_apps_Nfc packages/apps/Nfc
 
