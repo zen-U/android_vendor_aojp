@@ -16,8 +16,8 @@ LOCAL_PATH := vendor/aojp
 
 # default locale
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.product.locale.language=ja \
-    ro.product.locale.region=JP
+    persist.sys.locale=ja-JP \
+    persist.sys.timezone=Asia/Tokyo
 
 #Input method (Japanese keyboard)
 PRODUCT_PACKAGES += \
