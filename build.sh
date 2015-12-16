@@ -37,5 +37,5 @@ if [ ! "${MAKE_TARGET}" ]; then
   brunch ${PRODUCT}
 else
   choosecombo release cm_${PRODUCT} userdebug
-  make ${MAKE_TARGET} -j4
+  make ${MAKE_TARGET} -j4  ${@:3}
 fi
