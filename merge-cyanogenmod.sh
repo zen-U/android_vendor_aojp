@@ -77,8 +77,8 @@ func_fetch CyanogenMod android_device_samsung_msm8974-common device/samsung/msm8
 #func_fetch CyanogenMod android_device_samsung_quincyatt device/samsung/quincydcm
 #func_fetch CyanogenMod android_device_samsung_galaxys2-common device/samsung/galaxys2-common
 #func_fetch CyanogenMod android_device_samsung_i9100 device/samsung/sc02c
-#func_fetch CyanogenMod android_device_samsung_d2-common device/samsung/d2-common
-#func_fetch CyanogenMod android_device_samsung_d2att device/samsung/d2dcm
+func_fetch CyanogenMod android_device_samsung_d2-common device/samsung/d2-common
+func_fetch CyanogenMod android_device_samsung_d2att device/samsung/d2dcm
 func_fetch CyanogenMod android_device_samsung_jf-common device/samsung/jf-common
 func_fetch CyanogenMod android_device_samsung_jflteatt device/samsung/jfltedcm
 func_fetch CyanogenMod android_device_samsung_hlte device/samsung/hltedcm
@@ -92,7 +92,7 @@ func_fetch CyanogenMod android_device_samsung_klte device/samsung/kltedcm
 
 # kernel
 #func_fetch CyanogenMod android_kernel_samsung_msm8660-common kernel/samsung/msm8660-dcm
-#func_fetch CyanogenMod android_kernel_samsung_d2 kernel/samsung/d2dcm
+func_fetch CyanogenMod android_kernel_samsung_d2 kernel/samsung/d2dcm
 func_fetch CyanogenMod android_kernel_samsung_smdk4412 kernel/samsung/exynos4412dcm
 func_fetch CyanogenMod android_kernel_samsung_jf kernel/samsung/jfdcm
 func_fetch CyanogenMod android_kernel_samsung_hlte kernel/samsung/hlte
