@@ -19,6 +19,10 @@ export KBUILD_BUILD_HOST=kbc
 # import product config
 . ${PRODUCT_CONF}
 
+if [ "$TARGET_RECOVERY" == "twrp" ]; then
+    export PLATFORM_SDK_VERSION=23
+fi
+
 echo "========================================================================="
 echo " PRODUCT : ${PRODUCT}"
 echo "   CM_BUILDTYPE : ${CM_BUILDTYPE}"
