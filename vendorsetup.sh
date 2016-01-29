@@ -4,5 +4,7 @@ add_lunch_combo cm_sc03e-userdebug
 add_lunch_combo cm_celoxdcm-userdebug
 add_lunch_combo cm_quincydcm-userdebug
 add_lunch_combo cm_jfltedcm-userdebug
+add_lunch_combo cm_js01lte-userdebug
 add_lunch_combo cm_hltedcm-userdebug
 add_lunch_combo cm_hltekdi-userdebug
+
