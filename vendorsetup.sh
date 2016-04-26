@@ -1,6 +1,7 @@
 add_lunch_combo cm_d2dcm-userdebug
 add_lunch_combo cm_sc02e-userdebug
 add_lunch_combo cm_sc03e-userdebug
+add_lunch_combo cm_sc02f-userdebug
 add_lunch_combo cm_celoxdcm-userdebug
 add_lunch_combo cm_quincydcm-userdebug
 add_lunch_combo cm_jfltedcm-userdebug
