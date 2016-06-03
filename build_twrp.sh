@@ -29,8 +29,7 @@ if [ ! -e ${PRODUCT_CONF} ]; then
   echo -e "\033[0;36m"'    '`ls -1 vendor/aojp/products/ | cut -d . -f1`"\033[0;39m"
   exit -1
 fi
-# import product config
-. ${PRODUCT_CONF}
+
 
 if [ -d $OUT_DIR/target/product/$PRODUCT ]; then
 	rm -rf $OUT_DIR/target/product/$PRODUCT
@@ -38,7 +37,7 @@ fi
 
 ./build.sh $PRODUCT recoveryimage ${@:2}
 
-if [ "$TARGET_ODIN3_AVAILABLE" == "y" ]; then
+if [ "TARGET_ODIN3_AVAILABLE" == "y" ]; then
 	cd $OUT_DIR/target/product/$PRODUCT
 
 	if [ -f recovery.img ];then
